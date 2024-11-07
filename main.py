@@ -11,7 +11,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
-    bot.reply_to(message, "Hello! I'm a simple Telegram bot.")
+    bot.reply_to(message, "¡Hola! Soy el bot de Aerolínea Benjíro. Puedes usar el comando /buscar para encontrar vuelos!.")
 
 @bot.message_handler(func=lambda msg: True)
 def echo_all(message):
